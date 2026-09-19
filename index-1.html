@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vijith K | Digital Marketer</title>
+<meta name="description" content="Vijith K — Digital Marketer, Creative Designer and AI-powered digital professional.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--yellow:#ffd400;--black:#090909;--dark:#111;--white:#f7f7f7;--muted:#a6a6a6}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--black);color:var(--white);line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;background:rgba(9,9,9,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+.logo{font-weight:900;font-size:24px;letter-spacing:-1px}.logo span{color:var(--yellow)}
+.navlinks{display:flex;gap:25px}.navlinks a{font-size:14px;font-weight:700;text-transform:uppercase;transition:.3s}.navlinks a:hover{color:var(--yellow)}
+.menu{display:none;font-size:28px;cursor:pointer}
+section{padding:100px 7%;position:relative}
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:130px;background:radial-gradient(circle at 75% 35%,#2b2600 0,#090909 38%)}
+.hero-grid{width:100%;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.kicker{color:var(--yellow);font-weight:800;letter-spacing:4px;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(55px,8vw,110px);line-height:.9;letter-spacing:-5px;margin:18px 0}
+h1 span{color:var(--yellow)}
+.hero p{max-width:620px;color:#cfcfcf;font-size:18px;margin:25px 0}
+.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:14px 23px;border:1px solid var(--yellow);font-weight:800;border-radius:4px;transition:.3s;display:inline-block}
+.btn.primary{background:var(--yellow);color:#000}.btn:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(255,212,0,.15)}
+.hero-photo{min-height:520px;border:1px solid #333;background:linear-gradient(145deg,#222,#0d0d0d);display:flex;align-items:flex-end;justify-content:center;overflow:hidden;position:relative}
+.hero-photo:before{content:"VK";position:absolute;font-size:230px;font-weight:900;color:rgba(255,212,0,.06);top:30px;right:-20px}
+.photo-placeholder{width:78%;height:430px;border-radius:180px 180px 20px 20px;background:linear-gradient(160deg,#ffd9c3,#9b6b55);display:flex;align-items:center;justify-content:center;color:#111;font-size:80px;font-weight:900;box-shadow:0 0 0 15px rgba(255,212,0,.08)}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:45px}
+.eyebrow{color:var(--yellow);font-weight:800;text-transform:uppercase;letter-spacing:3px;font-size:12px}
+h2{font-size:clamp(38px,5vw,68px);line-height:1;letter-spacing:-3px;margin-top:8px}
+.section-head p{max-width:470px;color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.about-text{font-size:21px;color:#ddd}.about-text strong{color:var(--yellow)}
+.info-card{border:1px solid #292929;padding:30px;background:#101010}
+.info-row{padding:15px 0;border-bottom:1px solid #282828;display:flex;justify-content:space-between;gap:20px}.info-row:last-child{border:0}.info-row span:first-child{color:#777}.info-row span:last-child{text-align:right}
+.skills{background:#0e0e0e}.skill{margin:25px 0}.skill-top{display:flex;justify-content:space-between;font-weight:700}.bar{height:7px;background:#292929;margin-top:10px;overflow:hidden}.fill{height:100%;width:0;background:var(--yellow);transition:width 1.5s ease}
+.services-grid,.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#101010;border:1px solid #292929;padding:30px;min-height:220px;transition:.35s}.card:hover{transform:translateY(-8px);border-color:var(--yellow)}.num{font-size:13px;color:var(--yellow);font-weight:900}.card h3{font-size:25px;margin:35px 0 10px}.card p{color:#999}
+.portfolio-grid{grid-template-columns:repeat(2,1fr)}.project{min-height:330px;padding:0;overflow:hidden;position:relative;background:linear-gradient(135deg,#272727,#111);display:flex;align-items:flex-end}.project .project-bg{position:absolute;inset:0;background:radial-gradient(circle at 70% 20%,rgba(255,212,0,.28),transparent 35%),linear-gradient(145deg,#252525,#090909)}.project-content{position:relative;padding:30px;width:100%;background:linear-gradient(transparent,rgba(0,0,0,.95))}.project h3{font-size:30px}.project p{color:#bbb}
+.instagram{background:var(--yellow);color:#000}.instagram .eyebrow{color:#000}.instagram h2{max-width:700px}.insta-box{display:flex;justify-content:space-between;align-items:center;gap:30px;margin-top:30px;padding:25px;background:#000;color:#fff}.insta-box p{color:#aaa}.insta-btn{background:var(--yellow);color:#000;padding:13px 20px;font-weight:900;white-space:nowrap}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}.contact-list{margin-top:25px}.contact-item{padding:20px 0;border-bottom:1px solid #292929}.contact-item small{color:#777;display:block}.contact-item a:hover{color:var(--yellow)}
+footer{padding:30px 7%;border-top:1px solid #222;display:flex;justify-content:space-between;color:#777;font-size:13px}
+.reveal{opacity:0;transform:translateY(35px);transition:.8s}.reveal.show{opacity:1;transform:none}
+.top{position:fixed;right:22px;bottom:22px;width:45px;height:45px;background:var(--yellow);color:#000;display:grid;place-items:center;font-weight:900;z-index:900}
+@media(max-width:800px){
+.navlinks{display:none;position:absolute;top:65px;left:0;width:100%;padding:20px 7%;background:#0a0a0a;flex-direction:column}.navlinks.open{display:flex}.menu{display:block}
+.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-photo{min-height:390px}.photo-placeholder{height:330px}
+.services-grid,.portfolio-grid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:20px}section{padding:80px 6%}h1{letter-spacing:-3px}
+.insta-box{display:block}.insta-btn{display:inline-block;margin-top:18px}footer{display:block;text-align:center}footer div{margin:6px}
+}
+
+.admin-trigger{position:fixed;left:18px;bottom:18px;width:42px;height:42px;border:1px solid #333;background:#111;color:#777;border-radius:50%;z-index:999;font-size:17px;cursor:pointer;opacity:.35}.admin-trigger:hover{opacity:1;color:#ffd400;border-color:#ffd400}.admin-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.82);backdrop-filter:blur(10px);z-index:2000;padding:20px;align-items:center;justify-content:center}.admin-overlay.open{display:flex}.admin-panel{width:min(700px,100%);background:#111;border:1px solid #333;padding:30px}.admin-panel h2{font-size:32px;letter-spacing:-1px;margin:0 0 8px}.admin-panel p{color:#888;margin-bottom:20px}.admin-form{display:grid;gap:10px}.admin-form label{font-size:11px;color:#aaa;text-transform:uppercase;font-weight:800}.admin-form input,.admin-form textarea{width:100%;background:#090909;color:#fff;border:1px solid #333;padding:12px;font:inherit}.admin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}.admin-btn{padding:12px 18px;border:1px solid #ffd400;background:#ffd400;color:#000;font-weight:800;cursor:pointer}.admin-btn.alt{background:transparent;color:#fff}.admin-status{color:#aaa;font-size:13px}
+</style>
+</head>
+<body>
+
+<nav>
+<a class="logo" href="#home">VIJITH<span>.</span></a>
+<div class="navlinks" id="navlinks">
+<a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a>
+</div>
+<div class="menu" id="menu">☰</div>
+</nav>
+
+<section class="hero" id="home">
+<div class="hero-grid">
+<div class="reveal">
+<div class="kicker">Digital Marketer · Creative Professional</div>
+<h1>BUILD.<br><span>CREATE.</span><br>GROW.</h1>
+<p>I’m <strong>Vijith K</strong>, a Digital Marketer focused on turning ideas into strong brands, engaging content and measurable digital growth.</p>
+<div class="buttons"><a class="btn primary" href="#portfolio">View My Work</a><a class="btn" href="#contact">Let's Connect</a></div>
+</div>
+<div class="hero-photo reveal"><div class="photo-placeholder">VK</div></div>
+</div>
+</section>
+
+<section id="about">
+<div class="section-head reveal"><div><div class="eyebrow">01 / About Me</div><h2>Creative mind.<br>Digital mindset.</h2></div><p>Practical experience across marketing, branding, design, content and modern AI tools.</p></div>
+<div class="about-grid">
+<div class="about-text reveal">I’m a <strong>Digital Marketer</strong> who enjoys combining creativity with technology. My learning has been built through practical training, self-learning, mentorship and real project work. I focus on creating useful digital experiences that help brands communicate better and grow online.</div>
+<div class="info-card reveal">
+<div class="info-row"><span>Name</span><span>Vijith K</span></div>
+<div class="info-row"><span>Role</span><span>Digital Marketer</span></div>
+<div class="info-row"><span>Experience</span><span>Techtagon · 3 Months</span></div>
+<div class="info-row"><span>Learning</span><span>Digital Marketing & Creative Technology</span></div>
+<div class="info-row"><span>Based in</span><span>Kerala, India</span></div>
+</div>
+</div>
+</section>
+
+<section class="skills" id="skills">
+<div class="section-head reveal"><div><div class="eyebrow">02 / Skills</div><h2>What I work with.</h2></div></div>
+<div class="about-grid">
+<div>
+<div class="skill reveal"><div class="skill-top"><span>Digital Marketing</span><span>90%</span></div><div class="bar"><div class="fill" data-w="90%"></div></div></div>
+<div class="skill reveal"><div class="skill-top"><span>Meta Ads / Ads Manager</span><span>88%</span></div><div class="bar"><div class="fill" data-w="88%"></div></div></div>
+<div class="skill reveal"><div class="skill-top"><span>Social Media Marketing</span><span>88%</span></div><div class="bar"><div class="fill" data-w="88%"></div></div></div>
+<div class="skill reveal"><div class="skill-top"><span>Graphic Design / Branding</span><span>85%</span></div><div class="bar"><div class="fill" data-w="85%"></div></div></div>
+<div class="skill reveal"><div class="skill-top"><span>Photoshop</span><span>82%</span></div><div class="bar"><div class="fill" data-w="82%"></div></div></div>
+<div class="skill reveal"><div class="skill-top"><span>Claude AI / AI Tools</span><span>88%</span></div><div class="bar"><div class="fill" data-w="88%"></div></div></div>
+</div>
+<div>
+<div class="skill reveal"><div class="skill-top"><span>Video Editing</span><span>80%</span></div><div class="bar"><div class="fill" data-w="80%"></div></div></div>
+<div class="skill reveal"><div class="skill-top"><span>Content Creation</span><span>86%</span></div><div class="bar"><div class="fill" data-w="86%"></div></div></div>
+<div class="skill reveal"><div class="skill-top"><span>HTML / CSS / JavaScript</span><span>78%</span></div><div class="bar"><div class="fill" data-w="78%"></div></div></div>
+<div class="skill reveal"><div class="skill-top"><span>Website Development</span><span>78%</span></div><div class="bar"><div class="fill" data-w="78%"></div></div></div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="section-head reveal"><div><div class="eyebrow">03 / Services</div><h2>Ideas into impact.</h2></div></div>
+<div class="services-grid">
+<div class="card reveal"><div class="num">01</div><h3>Digital Marketing</h3><p>Digital strategies and campaigns designed around audience, content and growth.</p></div>
+<div class="card reveal"><div class="num">02</div><h3>Meta Ads</h3><p>Campaign setup, audience planning, creatives, lead generation and performance-focused advertising.</p></div>
+<div class="card reveal"><div class="num">03</div><h3>Branding</h3><p>Visual identity, logo concepts, creative direction and brand communication.</p></div>
+<div class="card reveal"><div class="num">04</div><h3>Creative Design</h3><p>Social media creatives, promotional designs, posters and digital content.</p></div>
+<div class="card reveal"><div class="num">05</div><h3>Content Creation</h3><p>Creative ideas, captions, campaign concepts and social content.</p></div>
+<div class="card reveal"><div class="num">06</div><h3>Website Development</h3><p>Modern responsive websites using HTML, CSS, JavaScript and AI-assisted workflows.</p></div>
+</div>
+</section>
+
+<section id="portfolio">
+<div class="section-head reveal"><div><div class="eyebrow">04 / Selected Work</div><h2>Things I’ve created.</h2></div><p>Selected project categories from design, branding, websites and digital marketing.</p></div>
+<div class="portfolio-grid">
+<div class="project reveal"><div class="project-bg"></div><div class="project-content"><h3>Branding & Logo Design</h3><p>Identity concepts, logos and brand creatives.</p></div></div>
+<div class="project reveal"><div class="project-bg"></div><div class="project-content"><h3>Digital Marketing</h3><p>Social campaigns, Meta ads and promotional content.</p></div></div>
+<div class="project reveal"><div class="project-bg"></div><div class="project-content"><h3>Website Projects</h3><p>Responsive websites and interactive digital experiences.</p></div></div>
+<div class="project reveal"><div class="project-bg"></div><div class="project-content"><h3>Creative Design</h3><p>Product creatives, phone cover designs and promotional artwork.</p></div></div>
+</div>
+</section>
+
+<section class="instagram">
+<div class="eyebrow">05 / More Work</div>
+<h2>See my latest work on Instagram.</h2>
+<div class="insta-box">
+<div><strong>@popins233</strong><p>More design work, creative projects and visual content.</p></div>
+<a class="insta-btn" href="https://www.instagram.com/popins233/" target="_blank" rel="noopener">VIEW INSTAGRAM →</a>
+</div>
+</section>
+
+<section id="contact">
+<div class="section-head reveal"><div><div class="eyebrow">06 / Contact</div><h2>Let’s create<br>something strong.</h2></div><p>Have a project, brand or digital marketing idea? Let’s talk.</p></div>
+<div class="contact-grid">
+<div class="reveal">
+<div class="contact-list">
+<div class="contact-item"><small>PHONE</small><a href="tel:+917736356860">+91 77363 56860</a></div>
+<div class="contact-item"><small>EMAIL</small><a href="mailto:Vijithk486@gmail.com">Vijithk486@gmail.com</a></div>
+<div class="contact-item"><small>INSTAGRAM</small><a href="https://www.instagram.com/popins233/" target="_blank">@popins233</a></div>
+</div>
+</div>
+<div class="info-card reveal">
+<h3 style="font-size:28px;margin-bottom:12px">Professional Learning</h3>
+<p style="color:#aaa">Digital Marketing & Creative Technology — practical training, self-learning and mentorship with hands-on work in digital marketing, social media, advertising, branding, content creation, AI tools and website development.</p>
+</div>
+</div>
+</section>
+
+<footer><div>© 2026 Vijith K. All rights reserved.</div><div>Digital Marketer · Creative Professional</div></footer>
+<a class="top" href="#home">↑</a>
+
+<script>
+const menu=document.getElementById('menu'), nav=document.getElementById('navlinks');
+menu.onclick=()=>nav.classList.toggle('open');
+document.querySelectorAll('.navlinks a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{
+  if(e.isIntersecting){
+   e.target.classList.add('show');
+   e.target.querySelectorAll?.('.fill').forEach(f=>f.style.width=f.dataset.w);
+  }
+ });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.querySelectorAll('.skill').forEach(el=>observer.observe(el));
+</script>
+<button class="admin-trigger" id="adminTrigger" title="Private Admin">⚙</button><div class="admin-overlay" id="adminOverlay"><div class="admin-panel"><div id="loginBox"><h2>Private Admin</h2><p>Manual editing is available only to the site owner.</p><div class="admin-form"><label>Password</label><input id="adminPassword" type="password" placeholder="Admin password"><div class="admin-actions"><button class="admin-btn" id="loginBtn">LOGIN</button><button class="admin-btn alt" id="closeLogin">CLOSE</button></div><div class="admin-status" id="loginStatus"></div></div></div><div id="editorBox" style="display:none"><h2>Manual Editor</h2><p>Edit and save your portfolio details.</p><div class="admin-form"><label>Name</label><input id="editName"><label>Role</label><input id="editRole"><label>About</label><textarea id="editAbout" rows="5"></textarea><label>Phone</label><input id="editPhone"><label>Email</label><input id="editEmail"><label>Instagram URL</label><input id="editInstagram"><div class="admin-actions"><button class="admin-btn" id="saveAdmin">SAVE CHANGES</button><button class="admin-btn alt" id="logoutAdmin">LOGOUT</button><button class="admin-btn alt" id="closeEditor">CLOSE</button></div><div class="admin-status" id="saveStatus"></div></div></div></div></div><script>const ADMIN_PASSWORD="Vijith@2026";const ao=document.getElementById("adminOverlay"),lb=document.getElementById("loginBox"),eb=document.getElementById("editorBox");function loadA(){let d=JSON.parse(localStorage.getItem("vijithPortfolioData")||"{}");editName.value=d.name||"Vijith K";editRole.value=d.role||"Digital Marketer";editAbout.value=d.about||"I’m a Digital Marketer who enjoys combining creativity with technology. My learning has been built through practical training, self-learning, mentorship and real project work.";editPhone.value=d.phone||"7736356860";editEmail.value=d.email||"Vijithk486@gmail.com";editInstagram.value=d.instagram||"https://www.instagram.com/popins233/"}adminTrigger.onclick=()=>{ao.classList.add("open");lb.style.display="block";eb.style.display="none";loginStatus.textContent=""};closeLogin.onclick=()=>ao.classList.remove("open");closeEditor.onclick=()=>ao.classList.remove("open");loginBtn.onclick=()=>{if(adminPassword.value===ADMIN_PASSWORD){sessionStorage.setItem("vijithAdmin","1");lb.style.display="none";eb.style.display="block";loadA()}else loginStatus.textContent="Incorrect password."};logoutAdmin.onclick=()=>{sessionStorage.removeItem("vijithAdmin");ao.classList.remove("open")};saveAdmin.onclick=()=>{if(sessionStorage.getItem("vijithAdmin")!=="1")return;let d={name:editName.value.trim(),role:editRole.value.trim(),about:editAbout.value.trim(),phone:editPhone.value.trim(),email:editEmail.value.trim(),instagram:editInstagram.value.trim()};localStorage.setItem("vijithPortfolioData",JSON.stringify(d));document.querySelector(".hero p").innerHTML='I’m <strong>'+d.name+'</strong>, a Digital Marketer focused on turning ideas into strong brands, engaging content and measurable digital growth.';document.querySelector(".about-text").textContent=d.about;document.querySelectorAll(".info-row").forEach(r=>{if(r.children[0].textContent.trim()==="Name")r.children[1].textContent=d.name;if(r.children[0].textContent.trim()==="Role")r.children[1].textContent=d.role});document.querySelector('a[href^="mailto:"]').textContent=d.email;document.querySelector('a[href^="mailto:"]').href="mailto:"+d.email;document.querySelectorAll('a[href*="instagram.com"]').forEach(a=>a.href=d.instagram);saveStatus.textContent="Saved on this browser."};</script></body>
+</html>
